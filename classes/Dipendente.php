@@ -57,19 +57,3 @@ class Dipendente extends Sede {
     }
 
 }
-
-
-try {
-    $dipendente = new Dipendente('INBS', rand(100, 200), 'C' , 'Lentisco', 20, 'Salumificio', 'taglio');
-
-    echo "Sede dipendente : {$dipendente->print('nomeSede')} <br>";
-    echo "ID dipendente : {$dipendente->print('dipendenteId')} <br>";
-    echo "Nome dipendente : {$dipendente->print('dipendenteNome')} <br>";
-    echo "Cognome dipendente : {$dipendente->print('dipendenteCognome')} <br>";
-    echo "Età dipendente : {$dipendente->print('dipendenteEta')} <br>";
-    echo "Reparto dipendente : {$dipendente->print('dipendenteReparto')} <br>";
-    echo "Postazione dipendente : {$dipendente->print('dipendentePostazione')} <br>";
-
-} catch (Exception $error) {
-    echo "Attenzione: {$error->getMessage()}";
-}
